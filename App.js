@@ -18,3 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+function test(){
+  console.log('test');
+};
