@@ -14,7 +14,7 @@ const App = () => {
       <Tab.Navigator>
         
         <Tab.Screen name="Heaters" component={HeatersScreen} />
-        <Tab.Screen name="Charts" component={ChartsScreen} />
+        {/* <Tab.Screen name="Charts" component={ChartsScreen} /> */}
       </Tab.Navigator>
   
   );

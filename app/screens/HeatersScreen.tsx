@@ -159,8 +159,8 @@ const HeaterItem = ({ heater, refreshData }: { heater: any, refreshData: any }) 
 
   return (
     <View style={{ padding: 20, borderBottomColor: '#ccc', borderBottomWidth: 1 }}>
-      <Text style={{ fontSize: 20 }}>{name}</Text>
-      <Text>Temperature (average): {temperature}°C</Text>
+      <Text>{name} - {fanOn ? 'Enabled' : 'Disabled'}</Text>
+      <Text>Temperature (average): {temperature !== null ? temperature : '0'}°C</Text>
       <Text>Date range: {dateFrom}</Text>
       <Button title={fanOn ? 'Stop Fan' : 'Start Fan'} onPress={handlePress} />
       <Button title={'Chart'} onPress={toggleModal} />
