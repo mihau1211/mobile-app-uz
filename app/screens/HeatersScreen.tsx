@@ -163,7 +163,7 @@ const HeaterItem = ({ heater, refreshData }: { heater: any, refreshData: any }) 
       <Text>Temperature (average): {temperature !== null ? temperature : '0'}°C</Text>
       <Text>Date range: {dateFrom}</Text>
       <Button title={fanOn ? 'Stop Fan' : 'Start Fan'} onPress={handlePress} />
-      <Button title={'Chart'} onPress={toggleModal} />
+      {fanOn ? <Button title={'Chart'} onPress={toggleModal} /> : <></>}
       <Modal
         animationType="slide"
         transparent={true}
